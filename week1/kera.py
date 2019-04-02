@@ -11,4 +11,15 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 
+# model.compile(loss=keras.losses.categorical_crossentropy,
+              # optimizer=keras.optimizers.SGD(lr=0.01, momentum=0.9, nesterov=True))
+
+# x_train 和 y_train 是 Numpy 数组 -- 就像在 Scikit-Learn API 中一样。
+model.fit(x_train, y_train, epochs=5, batch_size=32)
+
+model.train_on_batch(x_batch, y_batch)
+
+loss_and_metrics = model.evaluate(x_test, y_test, batch_size=128)
+
+classes = model.predict(x_test, batch_size=128)
 
