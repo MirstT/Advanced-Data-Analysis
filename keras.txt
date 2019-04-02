@@ -1,0 +1,4 @@
+keras ¼¤»îº¯Êý
+https://keras.io/zh/activations/
+keras ËðÊ§º¯Êý
+https://keras.io/zh/losses/ 
